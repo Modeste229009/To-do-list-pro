@@ -1,0 +1,199 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 15px;
+
+    background: #0a041b;
+
+    font-family: Arial, sans-serif;
+
+    overflow-x: hidden;
+}
+
+.container {
+    width: 100%;
+    max-width: 450px;
+
+    background: #1e1e1e;
+
+    padding: 22px;
+
+    border-radius: 18px;
+
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+
+    overflow: hidden;
+}
+
+h1 {
+    color: white;
+
+    text-align: center;
+
+    margin-bottom: 22px;
+
+    font-size: clamp(24px, 5vw, 34px);
+}
+
+.input-box {
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+
+    gap: 10px;
+
+    margin-bottom: 20px;
+}
+
+.input-box input {
+    flex: 1;
+
+    min-width: 0;
+
+    height: 52px;
+
+    border: none;
+    outline: none;
+
+    border-radius: 12px;
+
+    padding: 0 15px;
+
+    font-size: 16px;
+}
+
+.input-box button {
+    width: 52px;
+    height: 52px;
+
+    border: none;
+
+    border-radius: 12px;
+
+    background: #a31f1f;
+
+    color: white;
+
+    font-size: 28px;
+
+    cursor: pointer;
+
+    flex-shrink: 0;
+
+    transition: 0.3s;
+}
+
+.input-box button:hover {
+    background: #009f7f;
+}
+
+ul {
+    width: 100%;
+
+    list-style: none;
+}
+
+li {
+    width: 100%;
+
+    background: #2d2d2d;
+
+    color: white;
+
+    padding: 14px;
+
+    border-radius: 12px;
+
+    margin-bottom: 12px;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    gap: 10px;
+
+    overflow: hidden;
+}
+
+.task-text {
+    flex: 1;
+
+    word-break: break-word;
+
+    overflow-wrap: break-word;
+}
+
+.delete {
+    border: none;
+
+    background: red;
+
+    color: white;
+
+    padding: 8px 12px;
+
+    border-radius: 8px;
+
+    cursor: pointer;
+
+    flex-shrink: 0;
+}
+
+/* RESPONSIVE MOBILE */
+@media(max-width:500px) {
+
+    body {
+        padding: 10px;
+    }
+
+    .container {
+        padding: 16px;
+        border-radius: 15px;
+    }
+
+    h1 {
+        margin-bottom: 18px;
+    }
+
+    .input-box {
+        gap: 8px;
+    }
+
+    .input-box input {
+        height: 46px;
+        font-size: 14px;
+    }
+
+    .input-box button {
+        width: 46px;
+        height: 46px;
+
+        font-size: 22px;
+    }
+
+    li {
+        padding: 12px;
+
+        font-size: 14px;
+    }
+
+    .delete {
+        padding: 7px 10px;
+
+        font-size: 12px;
+    }
+
+}
